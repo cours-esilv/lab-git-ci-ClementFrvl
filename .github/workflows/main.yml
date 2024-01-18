@@ -3,22 +3,22 @@ on:
     branches:
     - main
 
-permissions:
-  actions: write
-  checks: write
-  contents: write
-  deployments: write
-  issues: write
-  packages: write
-  pull-requests: write
-  repository-projects: write
-  security-events: write
-  statuses: write
-
-
 jobs:
   print_message:
     runs-on: ubuntu-latest
+
+    permissions: 
+      actions: admin
+      checks: admin
+      contents: admin
+      deployments: admin
+      issues: admin
+      packages: admin
+      pull-requests: admin
+      repository-projects: admin
+      security-events: admin
+      statuses: admin
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
