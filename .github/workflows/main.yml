@@ -58,6 +58,6 @@ jobs:
         install: true
         
     # Build l'image Docker
-    - name: Docker build
+    - name: Docker build Dockerfile
       run: |
         docker build .
